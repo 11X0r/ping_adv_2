@@ -30,7 +30,7 @@ cd ../../..
 
 1. Build iputils (from project root):
 ```bash
-# Build location: external/iputils/builddir/
+# Build location: ping_adv_2/external/iputils/builddir/
 cd external/iputils
 ./configure && meson build
 cd builddir && meson install
@@ -42,6 +42,7 @@ cd builddir && meson install
 mkdir -p build && cd build
 cmake ..
 make
+sudo cmake --install .
 ```
 
 ## Running
