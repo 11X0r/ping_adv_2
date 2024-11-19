@@ -18,11 +18,12 @@ ping_adv_2/
 ```
 
 ## Setup (Ubuntu/Debian)
-Run the setup script to install dependencies:
+Run the setup script to install iputils dependencies:
 ```bash
+# Relative location: ping_adv_2/
 cd external/iputils/ci
 chmod +x debian.sh
-sudo ./ubuntu.sh
+sudo ./debian.sh
 cd ../../..
 ```
 
@@ -30,7 +31,7 @@ cd ../../..
 
 1. Build iputils (from project root):
 ```bash
-# Build location: ping_adv_2/external/iputils/builddir/
+# Relative location: ping_adv_2/
 cd external/iputils
 ./configure && meson build
 cd builddir && meson install
@@ -38,7 +39,7 @@ cd builddir && meson install
 
 2. Build our project (from project root):
 ```bash
-# Build location: ping_adv_2/
+# Relative location: ping_adv_2/
 mkdir -p build && cd build
 cmake ..
 make
